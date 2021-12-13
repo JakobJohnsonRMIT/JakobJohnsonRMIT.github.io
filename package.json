@@ -1,0 +1,26 @@
+{
+  "name": "universityAssessmentWebsite",
+  "version": "1.0.0",
+  "description": "A personal website where i plan to post my university assessments",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "build-css": "node-sass --include-path scss scss/main.scss ./main.css",
+    "watch-css": "nodemon -e scss -x npm run build-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakobJohnsonRMIT/ProfileSite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakobJohnsonRMIT/ProfileSite/issues"
+  },
+  "homepage": "https://github.com/JakobJohnsonRMIT/ProfileSite#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^7.0.0"
+  }
+}
