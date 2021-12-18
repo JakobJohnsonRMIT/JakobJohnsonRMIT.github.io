@@ -7,7 +7,8 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  background-color: #F8F6EB; }
+  background-color: #F8F6EB;
+  font-family: "Courier New", Courier, monospace; }
 
 body {
   display: grid;
@@ -19,16 +20,13 @@ a {
   text-decoration: none; }
 
 .heading-1 {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 5.5rem; }
 
 .heading-2 {
-  font-family: 'Courier New', Courier, monospace;
   font-size: 4.5rem; }
 
 .heading-4 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 3.5rem; }
+  font-size: 3rem; }
 
 .header {
   grid-row: 1 / 2;
@@ -72,11 +70,13 @@ a {
   grid-template-columns: 30vw 70vw; }
 
 .portrait {
-  grid-column: 1 / 2; }
+  grid-column: 1 / 2;
+  padding: 2.5rem; }
   .portrait-image {
-    height: 85vh;
+    height: 80vh;
     width: 100%;
-    object-fit: fill; }
+    object-fit: fill;
+    box-shadow: 1rem 1rem 4rem gray; }
 
 .content {
   grid-column: 2 / 3;
@@ -85,12 +85,66 @@ a {
     text-align: center;
     padding-bottom: 3rem; }
   .content-subheading {
-    padding-bottom: 1.5rem; }
+    padding-bottom: 1.75rem; }
   .content-text {
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.75rem;
     font-size: 2.5rem;
-    font-weight: 400;
-    font-family: 'Courier New', Courier, monospace; }
+    font-weight: 400; }
 
 .twitter-link {
   color: blue; }
+
+.interests {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: subgrid; }
+
+.content {
+  grid-column: 2 / 3;
+  padding: 4rem; }
+  .content-heading {
+    text-align: center;
+    padding-bottom: 2rem; }
+  .content-text {
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 400; }
+
+.job {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 30vw 70vw; }
+
+.screenshot {
+  grid-column: 1 / 2;
+  padding: 2.5rem; }
+  .screenshot-image {
+    height: 60vh;
+    width: 100%;
+    object-fit: scale-down;
+    box-shadow: 1rem 1rem 4rem gray; }
+
+.content {
+  grid-column: 2 / 3;
+  padding: 4rem; }
+  .content-heading {
+    text-align: center;
+    padding-bottom: 3rem; }
+  .content-subheading {
+    padding-bottom: 1.75rem; }
+  .content-text {
+    padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 400; }
+  .content-link {
+    color: blue;
+    font-size: 2.5rem; }
+  .content-list {
+    list-style: circle;
+    font-size: 2.5rem;
+    font-family: "Courier New", Courier, monospace;
+    padding-left: 2.5rem; }

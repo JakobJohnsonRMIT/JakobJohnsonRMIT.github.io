@@ -1,0 +1,27 @@
+.interests {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: subgrid;
+}
+
+.content {
+    grid-column: 2 / 3;
+    padding: 4rem;
+
+    &-heading {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    &-subheading {
+    }
+
+    &-text {
+        padding-bottom: 0.5rem;
+        font-size: 2rem;
+        font-weight: 400;
+    }
+}

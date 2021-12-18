@@ -1,0 +1,44 @@
+.introduction {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30vw 70vw;
+}
+
+.portrait {
+    grid-column: 1 / 2;
+    padding: 2.5rem;
+
+    &-image {
+        height: 80vh;
+        width: 100%;
+        object-fit: fill;
+        box-shadow: 1rem 1rem 4rem gray;
+    }
+}
+
+.content {
+    grid-column: 2 / 3;
+    padding: 4rem;
+
+    &-heading {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    &-subheading {
+        padding-bottom: 1.75rem;
+    }
+
+    &-text {
+        padding-bottom: 1.75rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+}
+
+.twitter-link {
+    color: blue;
+}
