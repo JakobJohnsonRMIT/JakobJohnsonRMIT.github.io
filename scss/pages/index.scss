@@ -1,0 +1,42 @@
+.introduction {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 30vw 70vw;
+}
+
+.portrait {
+    grid-column: 1 / 2;
+    &-image {
+        height: 85vh;
+        width: 100%;
+        object-fit: fill;
+    }
+}
+
+.content {
+    grid-column: 2 / 3;
+    padding: 4rem;
+
+    &-heading {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    &-subheading {
+        padding-bottom: 1.5rem;
+    }
+
+    &-text {
+        padding-bottom: 1.5rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: 'Courier New', Courier, monospace;
+    }
+}
+
+.twitter-link {
+    color: blue;
+}

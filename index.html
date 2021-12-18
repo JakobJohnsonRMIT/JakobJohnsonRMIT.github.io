@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="public/main.css"/>
+    <script defer src="src/index.js"></script>
     <title>Jakob's Assessments</title>
 </head>
 <body>
@@ -13,17 +13,32 @@
     <header class="header">
         <navbar class="navbar">
             <div class="navbar-brand">
-                <h1 class="navbar-brand__heading">
-                    <a href="#" class="navbar-brand__link">
+                <h1 class="navbar-brand__heading heading-1">
+                    <a href="index.html" class="navbar-brand__link">
                         Jakob Johnson
                     </a>
                 </h1>
             </div>
             <nav>
                 <ul class="navbar-nav">
+                    <li class="navbar-nav__item active">
+                        <a  href="public/interests.html" class="navbar-nav__link">
+                            Interest in IT
+                        </a>
+                    </li>
                     <li class="navbar-nav__item">
-                        <a  href="profile.html" class="navbar-nav__link">
-                            Profile
+                        <a  href="public/job.html" class="navbar-nav__link">
+                            Ideal Job
+                        </a>
+                    </li>
+                    <li class="navbar-nav__item">
+                        <a  href="public/profile.html" class="navbar-nav__link">
+                            Personal Profile
+                        </a>
+                    </li>
+                    <li class="navbar-nav__item">
+                        <a  href="public/project.html" class="navbar-nav__link">
+                            Project Idea
                         </a>
                     </li>
                 </ul>
@@ -33,13 +48,31 @@
 
     <section class="introduction">
         <div class="portrait">
-            <img src="#">
+            <img class="portrait-image" src="img/portrait.JPG"/>
         </div>
-        <div class="content"></div>
-    </section>
+        <div class="content">
+            <h2 class="content-heading heading-2">Introduction</h2>
+            <h4 class="content-subheading heading-4">Jakob Johnson</h4>
 
-    <section class="assessments">
-        <div></div>
+            <h4 class="content-subheading heading-4">S3931171</h4>
+
+            <h4 class="content-subheading heading-4">S3931171@student.rmit.edu.au</h4>
+
+            <h4 class="content-subheading heading-4">Education & background:</h4> 
+            <p class="content-text">
+                I completed my high school certificate at Parkes high school. After school, I met two trade certificates at tafe and spent 10 years as a mechanic and auto electrician.
+            </p>
+
+            <h4 class="content-subheading heading-4">Hobbies:</h4>
+            <p class="content-text">
+                My main hobbies include prototyping with development boards, networking and ethical hacking challenges. I also am a lifelong fan of the Parramatta Eels, and I love rugby league.
+
+                I started posting projects on my Twitter a while ago; check it out <a class="twitter-link" href="https://twitter.com/_JAKOB___">here</a>.
+                <br>
+                <br>
+                Check out the links in the navbar to learn more about myself.
+            </p>
+        </div>
     </section>
 
 </body>

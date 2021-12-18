@@ -1,11 +1,11 @@
 {
-  "name": "profile-Website",
+  "name": "ProfileWebsite",
   "version": "1.0.0",
   "description": "A personal website where i plan to post my university assessments",
   "main": "index.js",
   "scripts": {
     "start": "live-server",
-    "build-css": "node-sass --include-path scss scss/main.scss ./main.css",
+    "build-css": "node-sass --include-path scss scss/main.scss public/main.css",
     "watch-css": "nodemon -e scss -x npm run build-css"
   },
   "keywords": [],
