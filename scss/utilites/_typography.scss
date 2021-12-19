@@ -1,12 +1,21 @@
 .heading-1 {
     font-size: 5.5rem;
+    font-family: $font-display;
 }
 
 .heading-2 {
     font-size: 4.5rem;
+    font-family: $font-display;
 }
 
 .heading-4 {
+    font-size: 3rem;
+    font-family: $font-display;
+}
+
+.bold {
+    font-family: $font-display;
+    font-weight: bold;
     font-size: 3rem;
 }
 

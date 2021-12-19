@@ -19,7 +19,8 @@
 
         &__link {
             color: black;
-            font-family: 'Courier New', Courier, monospace;
+            font-family: $font-display;
+            font-size: 7rem;
         }
     }
 
@@ -37,7 +38,7 @@
                     content: "|";
                     font-size: 2.5rem;
                     color: black;
-                    font-family: 'Courier New', Courier, monospace;
+                    font-family: $font-primary;
                 }
             }
         }
@@ -45,8 +46,8 @@
         &__link {
             color: blue;
             font-size: 2.5rem;
-            font-weight: 400;
-            font-family: 'Courier New', Courier, monospace;
+            font-weight: 300;
+            font-family: $font-primary;
         }
     }
 }

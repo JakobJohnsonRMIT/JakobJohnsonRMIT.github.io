@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <script defer src="../src/index.js"></script>
     <title>project idea</title>
@@ -21,7 +24,7 @@
             </div>
             <nav>
                 <ul class="navbar-nav">
-                    <li class="navbar-nav__item active">
+                    <li class="navbar-nav__item">
                         <a  href="interests.html" class="navbar-nav__link">
                             Interest in IT
                         </a>
@@ -46,8 +49,163 @@
         </navbar>
     </header>
 
-    <section class="profile">
-
+    <section class="project">
+        <div class="content">
+            <h2 class="content-heading heading-2">
+                Pool area and gate monitor
+            </h2>
+            <p class="content-text">
+                <strong class="bold">
+                    Overview of the idea:
+                </strong>
+                <br>
+                The inspiration for the project idea comes from the current summer and "drowning season" for toddlers.
+                The project would require hardware and software components and the internet to connect to an app.
+                The main components are:
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        PIR (passive infrared) sensor to detect someone entering the pool area
+                    </li>
+                    <li class="content-list__item">
+                        A camera that would turn on when someone is detected
+                    </li>
+                    <li class="content-list__item">
+                        An alarm that would sound when someone is detected
+                    </li>
+                    <li class="content-list__item">
+                        A switch on the gate will notify the app if left ajar.
+                    </li>
+                    <li class="content-list__item">
+                        A native mobile app using react native or flutter allows the user to disable the alarm if they intended to use the pool, view who has entered the pool area, test the alarm or see if the gate is closed.
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <br>
+            <p class="content-text">
+                <strong class="bold">
+                    Motivations:
+                </strong>
+                <br>
+                Drowning is one of the leading causes of unintentional death for Australian children. 
+                Eighteen children between 0 - 4 years drowned in 2017/2018:
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        Swimming pools are the most common location for toddler drownings making up 67% of all cases
+                    </li>
+                    <li class="content-list__item">
+                        Children falling into water account for 78% of drownings
+                    </li>
+                    <li class="content-list__item">
+                        Evidence suggests that many drowning deaths in backyard pools result from pool barriers that are faulty or non-compliant with Australian standards and the absence of active adult supervision.
+                    </li>
+                </ul>
+                <br>
+                <br>
+                <a class="content-link" href="https://kidsafe.com.au/wp-content/uploads/2019/03/Drowning-Information-Sheet.pdf">Statistics from KidSafe report on toddler drownings</a><p class="content-text">- Children Accident Prevention Foundation Of Australia</p>
+            </p>
+            <br>
+            <br>
+            <p class="content-text">
+                <strong class="bold">
+                    Description:
+                </strong>
+                <br>
+                <br>
+                The goals and objectives of this project are to make the pool area a safer place by creating fewer opportunities for harm or death to occur because of faulty pool fences, gates left open, or opportunistic children.
+                The monitor will be a small remote IP rated waterproof case with a solar panel on the top to recharge the internal battery mounted on the pool fence next to the gate.
+                The monitor will feature a PIR sensor to measure infrared light radiating from objects in its field of view, similar to how they perform in motion detectors, security alarms and automatic lighting applications.
+                Additionally, the monitor will feature a switch between the monitor and the gate. Possibly an infrared light that, when the gate opens, opens circuits and sounds the alarm and notifies the user. 
+                The monitor also features a camera to stream a live video feed on request from the accompanying application. When the user's app linked with the monitor notifies that someone is in the pool area or has opened the gate, they can check the live video feed to confirm it is not a child before dismissing the alarm.
+            </p>
+            <p class="content-text">
+                <strong class="bold">
+                    Tools and Techniques:
+                    <br>
+                    A suitable development environment includes:
+                </strong>
+                <br>
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        Compatible IDE and programmer
+                    </li>
+                    <li class="content-list__item">
+                        A third arm and soldering iron
+                    </li>
+                    <li class="content-list__item">
+                        Accurate measurement tools
+                    </li>
+                    <li class="content-list__item">
+                        Various hand tools
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <p class="content-text">
+                <strong class="bold">
+                    Materials:
+                </strong>
+                <br>
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        An ESP32 WI-FI and Bluetooth MCU
+                    </li>
+                    <li class="content-list__item">
+                        Free RTOS
+                    </li>
+                    <li class="content-list__item">
+                        Solderable breadboard
+                    </li>
+                    <li class="content-list__item">
+                        HW-416 PIR breakout
+                    </li>
+                    <li class="content-list__item">
+                        Passive buzzer
+                    </li>
+                    <li class="content-list__item">
+                        Red & green LEDs
+                    </li>
+                    <li class="content-list__item">
+                        Solar power supply
+                    </li>
+                    <li class="content-list__item">
+                        An infrared or magnetic switch for the gate
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <p class="content-text">
+                <strong class="bold">
+                    Skills Required:
+                </strong>
+                <br>
+                <ul class="content-list">
+                    <li class="content-list__item">
+                        Knowledge of electronics and building circuits
+                    </li>
+                    <li class="content-list__item">
+                        Embedded C/C++/rust programming experience
+                    </li>
+                    <li class="content-list__item">
+                        Cloud, networking and Linux experience
+                    </li>
+                    <li class="content-list__item">
+                        Python and API development experience
+                    </li>
+                    <li class="content-list__item">
+                        JavaScript or native app development experience
+                    </li>
+                </ul>
+            </p>
+            <br>
+            <p class="content-text">
+                <strong class="bold">
+                    Outcome:
+                </strong>
+                <br>
+                If this project were successful, the ideal outcome would be to prove that the idea is feasible or a POC (proof of concept) that, with further R&D, could prevent future toddler drownings.
+            </p>
+        </div>
     </section>
     
 </body>

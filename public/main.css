@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   background-color: #F8F6EB;
-  font-family: "Courier New", Courier, monospace; }
+  font-family: "IBM Plex Mono", monospace; }
 
 body {
   display: grid;
@@ -20,12 +20,20 @@ a {
   text-decoration: none; }
 
 .heading-1 {
-  font-size: 5.5rem; }
+  font-size: 5.5rem;
+  font-family: "Source Serif Pro", serif; }
 
 .heading-2 {
-  font-size: 4.5rem; }
+  font-size: 4.5rem;
+  font-family: "Source Serif Pro", serif; }
 
 .heading-4 {
+  font-size: 3rem;
+  font-family: "Source Serif Pro", serif; }
+
+.bold {
+  font-family: "Source Serif Pro", serif;
+  font-weight: bold;
   font-size: 3rem; }
 
 .header {
@@ -44,7 +52,8 @@ a {
       padding-left: 5rem; }
     .navbar-brand__link {
       color: black;
-      font-family: 'Courier New', Courier, monospace; }
+      font-family: "Source Serif Pro", serif;
+      font-size: 7rem; }
   .navbar-nav {
     display: flex;
     list-style: none;
@@ -55,12 +64,12 @@ a {
         content: "|";
         font-size: 2.5rem;
         color: black;
-        font-family: 'Courier New', Courier, monospace; }
+        font-family: "IBM Plex Mono", monospace; }
     .navbar-nav__link {
       color: blue;
       font-size: 2.5rem;
-      font-weight: 400;
-      font-family: 'Courier New', Courier, monospace; }
+      font-weight: 300;
+      font-family: "IBM Plex Mono", monospace; }
 
 .introduction {
   grid-column: 1 / -1;
@@ -73,6 +82,7 @@ a {
   grid-column: 1 / 2;
   padding: 2.5rem; }
   .portrait-image {
+    border-radius: 1rem;
     height: 80vh;
     width: 100%;
     object-fit: fill;
@@ -89,7 +99,7 @@ a {
   .content-text {
     padding-bottom: 1.75rem;
     font-size: 2.5rem;
-    font-weight: 400; }
+    font-weight: 300; }
 
 .twitter-link {
   color: blue; }
@@ -110,7 +120,7 @@ a {
   .content-text {
     padding-bottom: 0.5rem;
     font-size: 2rem;
-    font-weight: 400; }
+    font-weight: 300; }
 
 .job {
   grid-column: 1 / -1;
@@ -121,12 +131,42 @@ a {
 
 .screenshot {
   grid-column: 1 / 2;
+  grid-row: 1 / 2;
   padding: 2.5rem; }
   .screenshot-image {
     height: 60vh;
     width: 100%;
     object-fit: scale-down;
     box-shadow: 1rem 1rem 4rem gray; }
+
+.content {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 4rem; }
+  .content-heading {
+    text-align: center;
+    padding-bottom: 3rem; }
+  .content-subheading {
+    padding-bottom: 1.75rem; }
+  .content-text {
+    padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 300; }
+  .content-link {
+    color: blue;
+    font-size: 2.5rem; }
+  .content-list {
+    list-style: circle;
+    font-size: 2.5rem;
+    font-family: "IBM Plex Mono", monospace;
+    padding-left: 2.5rem; }
+
+.profile {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: subgrid; }
 
 .content {
   grid-column: 2 / 3;
@@ -139,12 +179,40 @@ a {
   .content-text {
     padding-bottom: 1.75rem;
     font-size: 2.5rem;
-    font-weight: 400; }
+    font-weight: 300; }
   .content-link {
     color: blue;
     font-size: 2.5rem; }
   .content-list {
     list-style: circle;
     font-size: 2.5rem;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "IBM Plex Mono", monospace;
+    padding-left: 2.5rem; }
+
+.project {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: subgrid; }
+
+.content {
+  grid-column: 2 / 3;
+  padding: 4rem; }
+  .content-heading {
+    text-align: center;
+    padding-bottom: 3rem; }
+  .content-subheading {
+    padding-bottom: 1.75rem; }
+  .content-text {
+    padding-bottom: 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 300; }
+  .content-link {
+    color: blue;
+    font-size: 2.5rem; }
+  .content-list {
+    list-style: circle;
+    font-size: 2.5rem;
+    font-family: "IBM Plex Mono", monospace;
     padding-left: 2.5rem; }
